@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <!-- Optionally, if you want to support multiple icon types and sizes (for different devices) -->
+  <link rel="icon" href="favicon_io\favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="favicon_io\favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="favicon_io\favicon-48x48.png" sizes="48x48" type="image/png">
+  <link rel="icon" href="favicon_io\android-chrome-512x512.png" sizes="512x512" type="image/png">
+  <link rel="icon" href="favicon_io\android-chrome-192x192.png" sizes="192x192" type="image/png">
+  <link rel="icon" href="favicon_io\apple-touch-icon.png"  type="image/png">
+  
+  <title>Man Machine Token</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div id="logo-container">
+      <img src="background-image.jpeg" alt="Man Machine Token Logo" id="logo">
+      <img src="background-image.jpeg" alt="Man Machine Token Logo" id="logo">
+      <img src="background-image.jpeg" alt="Man Machine Token Logo" id="logo">
+      <img src="background-image.jpeg" alt="Man Machine Token Logo" id="logo">
+      <img src="background-image.jpeg" alt="Man Machine Token Logo" id="logo">
+      <img src="background-image.jpeg" alt="Man Machine Token Logo" id="logo">
+      <img src="background-image.jpeg" alt="Man Machine Token Logo" id="logo">
+    
+    </div>
+    <h1>Welcome to Man Machine Airdrop</h1>
+    <p>Earn MACH tokens by registering and referring your friends!</p>
+
+    <div id="machEarnings">
+      <h2 id="machCounter">You have earned 0 MACH</h2>
+      <p id="displayWallet">Wallet: N/A</p>
+    </div>
+
+    <div id="notificationContainer" class="notification-container"></div>
+
+    <div id="userInfo" style="text-align: center;">
+      <p id="displayEmail">Email: N/A</p>
+      <p id="displayWallet"></p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Registration Section -->
+    <section id="registrationContainer">
+      <h2>Register to Claim 100,000 MACH</h2>
+      <form id="registerForm">
+        <label for="address">Wallet Address</label>
+        <input id="address" type="text" placeholder="Enter your wallet address" required>
+        
+        <label for="email">Email Address</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+        
+        <button type="submit">Register</button>
+      </form>
+    </section>
+
+    <!-- Referral Section -->
+    <section id="referral">
+      <h2>Your Referral Link</h2>
+      <p>Share this link with your friends to earn 50,000 MACH for each referral:</p>
+      <input type="text" id="referralLink" readonly>
+    </section>
+
+    <!-- Countdown Offer Section -->
+    <section id="timer">
+      <h2>Limited Time Offer!</h2>
+      <p>Register now to get your bonus MACH tokens!</p>
+      <div id="countdown"></div>
+    </section>
+    <div id="userCount"></div>
+
+    <div id="machDashboard" class="mach-dashboard">
+      <div id="balanceDisplay" class="mach-balance">Loading MACH Balance...</div>
+      <div id="rateDisplay" class="mach-rate">Current Rate: Loading...</div>
+      <div id="referralBonusDisplay" class="mach-rate">Referral Bonus: Loading...</div>
+  </div>
+
+    <!--uniswap-->
+    <section id="buy">
+      <h2>Buy MACH</h2>
+      <h2>Purchase MACH tokens on our partner DEX:</h2>
+      <a href="https://app.uniswap.org/explore/tokens/celo/0x58c9c9c45eaa003c39b92b523cf19ea08a0310a7" target="_blank" class="buy-link">Buy on Uniswap</a>
+      <p>All unclaimed tokens will be awarded to the presale buyers</p>
+      <P>YAAY!!! you are an early investor</P>
+    </section>
+
+
+    <div id="buy">
+      <H2>DYOR AND READ OUR WHITE PAPER</H2>
+      <a href="whitepaper.html" class="whitepaper-link">View White Paper</a>
+    </div>
+
+    <!-- Referred Users Section -->
+    <section id="referredUsers">
+      <h2>Your Referrals</h2>
+      <ul id="referralsList"></ul>
+    </section>
+
+    <!-- User Lookup Section -->
+    <section id="userLookup">
+      <h2>Look Up Your Account</h2>
+      <label for="userEmailInput">Enter your email:</label>
+      <input id="userEmailInput" type="email" placeholder="Enter your email to fetch data" required>
+      <button id="fetchUserDataBtn">Fetch Data</button>
+    </section>
+
+  </main>
+
+  
+    <footer id="footer">
+      <div class="footer-container">
+        <p>&copy; 2024 Man Machine Token. All Rights Reserved.</p>
+        <div class="social-icons">
+          <!-- Twitter Icon -->
+          <a href="https://x.com/Pink_Bitcoin01" target="_blank" class="social-icon x_Logo_2024" aria-label="Twitter">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/x_Logo_2021.svg" alt="Twitter">
+          </a>
+    
+          <!-- Telegram Icon -->
+          <a href="https://t.me/+PB6toOvXKQkyYTg0" target="_blank" class="social-icon telegram" aria-label="Telegram">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Telegram_logo.svg" alt="Telegram">
+          </a>
+        </div>
+      </div>
+    </footer>
+    
+    
+ 
+
+  <script type="module" src="scripts.js"></script>
+</body>
+</html>
